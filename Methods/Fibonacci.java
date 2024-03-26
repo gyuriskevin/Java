@@ -18,3 +18,30 @@ public class Fibonacci {
         System.out.println(n +". elem: " + fibonacciNumber);
     }
 }
+
+
+/// Tomb nelkul
+
+public class Fibonacci2 {
+
+    public static int getFibonacci(int szam) {
+
+        int num1= 0;
+        int num2= 1;
+        int res = 0;
+
+        for (int i = 3; i <= szam; i++) {
+           res = num1 + num2;
+           num1 = num2;
+           num2 = res;
+        }
+
+        return res;
+    }
+
+    public static void main(String[] args) {
+        int n = 7;
+        int fibonacciNumber = getFibonacci(n);
+        System.out.println(n +". elem: " + fibonacciNumber);
+    }
+}
