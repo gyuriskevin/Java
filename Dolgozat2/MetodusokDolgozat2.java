@@ -25,7 +25,7 @@ public class MetodusokDolgozat2 {
         return false;
     }
 
-    public static String getMeret(int meret){
+    public static String getMeret(double meret){
         if (meret < 150){
             return "XS";
         }
